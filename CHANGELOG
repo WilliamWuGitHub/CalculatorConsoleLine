@@ -2,6 +2,9 @@ CHANGELOG
 
 What’s new?
 
+5/12/13
+* Added loop support in main menu
+
 4/12/13
 * Added basic math operations functionality
 * Added interactivity with choices 
