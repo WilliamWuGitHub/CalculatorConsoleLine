@@ -19,19 +19,19 @@ void loopAgain() {
     
 	Loop loop;
     if (choiceTwo == "Add" || choiceTwo == "add") {
-        cout << loop.add();
+        loop.add();
     }
 	
 	if (choiceTwo == "Sub" || choiceTwo == "sub") {
-		cout << loop.subtract();
+		loop.subtract();
 	}
 	
 	if (choiceTwo == "Mul" || choiceTwo == "mul") {
-		cout << loop.multiply();
+		loop.multiply();
 	}
 	
 	if (choiceTwo == "Div" || choiceTwo == "div") {
-		cout << loop.divide();
+		loop.divide();
 	}
 	
 	if (
@@ -60,19 +60,19 @@ int main(int argc, const char * argv[])
     
 	Loop loop;
     if (choice == "Add" || choice == "add") {
-        cout << loop.add();
+        loop.add();
     }
 	
 	if (choice == "Sub" || choice == "sub") {
-		cout << loop.subtract();
+		loop.subtract();
 	}
 	
 	if (choice == "Mul" || choice == "mul") {
-		cout << loop.multiply();
+		loop.multiply();
 	}
 	
 	if (choice == "Div" || choice == "div") {
-		cout << loop.divide();
+		loop.divide();
 	}
 	
 	if (

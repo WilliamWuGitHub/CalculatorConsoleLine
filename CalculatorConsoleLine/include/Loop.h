@@ -17,11 +17,13 @@ using namespace std;
 class Loop {
     public:
 		Loop();
+		
+		void errorMessage(const string errorStage);
 	
-        double add();
-        double subtract();
-		double multiply();
-		double divide();
+        void add();
+        void subtract();
+		void multiply();
+		void divide();
 	
     private:
     

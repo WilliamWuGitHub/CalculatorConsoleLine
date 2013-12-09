@@ -15,66 +15,126 @@ using namespace std;
 Loop::Loop() {
 }
 
-double Loop::add() {
+void Loop::errorMessage(const string errorStage) {
+	cout << "Invalid input in " << errorStage << "!" << endl;
+}
+
+void Loop::add() {
 	cout << endl;
 	cout << "Add" << endl;
 	
 	cout << "Enter first number: ";
 	double addDoubleOne;
 	cin >> addDoubleOne;
+	while (cin.fail()) {
+		errorMessage("adding first number");
+		cin.clear();
+		cin.ignore(10000, '\n');
+		cout << "Enter first number again: ";
+		cin >> addDoubleOne;
+	}
 	
 	cout << "Enter second number: ";
 	double addDoubleTwo;
 	cin >> addDoubleTwo;
+	while (cin.fail()) {
+		errorMessage("adding second number");
+		cin.clear();
+		cin.ignore(10000, '\n');
+		cout << "Enter second number again: ";
+		cin >> addDoubleTwo;
+	}
 	
 	double sum = addDoubleOne + addDoubleTwo;
-	return sum;
+	cout << "Sum: " << sum << endl;
 }
 
-double Loop::subtract() {
+void Loop::subtract() {
 	cout << endl;
 	cout << "Subtract" << endl;
 	
 	cout << "Enter first number: ";
 	double subDoubleOne;
 	cin >> subDoubleOne;
+	while (cin.fail()) {
+		errorMessage("subtracting first number");
+		cin.clear();
+		cin.ignore(10000, '\n');
+		cout << "Enter first number again: ";
+		cin >> subDoubleOne;
+	}
 	
 	cout << "Enter second number: ";
 	double subDoubleTwo;
 	cin >> subDoubleTwo;
+	while (cin.fail()) {
+		errorMessage("subtracting second number");
+		cin.clear();
+		cin.ignore(10000, '\n');
+		cout << "Enter second number again: ";
+		cin >> subDoubleTwo;
+	}
 	
 	double difference = subDoubleOne - subDoubleTwo;
-	return difference;
+	cout << "Difference: " << difference << endl;
 }
 
-double Loop::multiply() {
+void Loop::multiply() {
 	cout << endl;
 	cout << "Multiply" << endl;
 	
 	cout << "Enter first number: ";
 	double mulDoubleOne;
 	cin >> mulDoubleOne;
+	while (cin.fail()) {
+		errorMessage("multiplying first number");
+		cin.clear();
+		cin.ignore(10000, '\n');
+		cout << "Enter first number again: ";
+		cin >> mulDoubleOne;
+	}
 	
 	cout << "Enter second number: ";
 	double mulDoubleTwo;
 	cin >> mulDoubleTwo;
+	while (cin.fail()) {
+		errorMessage("multiplying second number");
+		cin.clear();
+		cin.ignore(10000, '\n');
+		cout << "Enter second number again: ";
+		cin >> mulDoubleTwo;
+	}
 	
 	double product = mulDoubleOne * mulDoubleTwo;
-	return product;
+	cout << "Product: " << product << endl;
 }
 
-double Loop::divide() {
+void Loop::divide() {
 	cout << endl;
 	cout << "Divide" << endl;
 	
 	cout << "Enter first number: ";
 	double divDoubleOne;
 	cin >> divDoubleOne;
+	while (cin.fail()) {
+		errorMessage("dividing first number");
+		cin.clear();
+		cin.ignore(10000, '\n');
+		cout << "Enter first number again: ";
+		cin >> divDoubleOne;
+	}
 	
 	cout << "Enter second number: ";
 	double divDoubleTwo;
 	cin >> divDoubleTwo;
+	while (cin.fail()) {
+		errorMessage("dividing second number");
+		cin.clear();
+		cin.ignore(10000, '\n');
+		cout << "Enter second number again: ";
+		cin >> divDoubleTwo;
+	}
 	
 	double division = divDoubleOne / divDoubleTwo;
-	return division;
+	cout << "Division: " << division << endl;
 }
