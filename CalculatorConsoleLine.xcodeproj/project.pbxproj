@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		AA49F011184EEC0A008B2D17 /* Loop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Loop.cpp; path = CalculatorConsoleLine/src/Loop.cpp; sourceTree = "<group>"; };
 		AA49F014184EECB5008B2D17 /* Loop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Loop.h; path = CalculatorConsoleLine/include/Loop.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
-		AAE63CC9184C52F2000EEFDB /* CalculatorConsoleLine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CalculatorConsoleLine; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE63CC9184C52F2000EEFDB /* CalculatorConsoleLine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = CalculatorConsoleLine; path = /Users/muhdmirzamz/Documents/Code/Projects/CPPProjects/CalculatorConsoleLine/build/Debug/CalculatorConsoleLine; sourceTree = "<absolute>"; };
 		AAE63CCC184C52F2000EEFDB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AAE63CCE184C52F2000EEFDB /* CalculatorConsoleLine.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CalculatorConsoleLine.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,16 +52,7 @@
 				AA49F014184EECB5008B2D17 /* Loop.h */,
 				AA49F011184EEC0A008B2D17 /* Loop.cpp */,
 				AAE63CCB184C52F2000EEFDB /* CalculatorConsoleLine */,
-				AAE63CCA184C52F2000EEFDB /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		AAE63CCA184C52F2000EEFDB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AAE63CC9184C52F2000EEFDB /* CalculatorConsoleLine */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		AAE63CCB184C52F2000EEFDB /* CalculatorConsoleLine */ = {
@@ -110,7 +101,7 @@
 				en,
 			);
 			mainGroup = AAE63CC0184C52F2000EEFDB;
-			productRefGroup = AAE63CCA184C52F2000EEFDB /* Products */;
+			productRefGroup = AAE63CC0184C52F2000EEFDB;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
