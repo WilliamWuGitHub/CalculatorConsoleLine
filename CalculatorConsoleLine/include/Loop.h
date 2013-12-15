@@ -24,6 +24,9 @@ class Loop {
         void subtract();
 		void multiply();
 		void divide();
+		
+		void outputArray();
+		void loopMenuAgain();
 	
     private:
     

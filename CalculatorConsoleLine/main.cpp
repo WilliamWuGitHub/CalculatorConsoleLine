@@ -13,7 +13,8 @@
 using namespace std;
 
 void loopAgain() {
-    cout << "Enter your choice (Type word to the left): ";
+	cout << "Invalid input!" << endl;
+    cout << "Enter your choice (Type word to the left of hyphen) again or q to quit: ";
     string choiceTwo;
     cin >> choiceTwo;
     
@@ -34,11 +35,16 @@ void loopAgain() {
 		loop.divide();
 	}
 	
+	if (choiceTwo == "Q" || choiceTwo == "q") {
+		cout << "Program quit" << endl;
+	}
+	
 	if (
 		choiceTwo != "Add" && choiceTwo != "add" &&
 		choiceTwo != "Sub" && choiceTwo != "sub" &&
 		choiceTwo != "Mul" && choiceTwo != "mul" &&
-		choiceTwo != "Div" && choiceTwo != "div"
+		choiceTwo != "Div" && choiceTwo != "div" &&
+		choiceTwo != "Q" && choiceTwo != "q"
 		) {
 		loopAgain();
 	}
@@ -48,13 +54,13 @@ int main(int argc, const char * argv[])
 {
     cout << "Calculator" << endl;
     
-    string menuArray[] = {"Add - Add", "Sub - Subtract", "Mul - Multiply", "Div - Divide"};
+    string menuArray[] = {"add - Add", "sub - Subtract", "mul - Multiply", "div - Divide"};
     cout << endl;
     for (int i = 0; i < 4; i++) {
         cout << menuArray[i] << endl;
     }
     
-    cout << "Enter your choice (Type word to the left): ";
+    cout << "Enter your choice (Type word to the left of hyphen) or q to quit: ";
     string choice;
     cin >> choice;
     
@@ -75,11 +81,16 @@ int main(int argc, const char * argv[])
 		loop.divide();
 	}
 	
+	if (choice == "Q" || choice == "q") {
+		cout << "Program quit" << endl;
+	}
+	
 	if (
 		choice != "Add" && choice != "add" &&
 		choice != "Sub" && choice != "sub" &&
 		choice != "Mul" && choice != "mul" &&
-		choice != "Div" && choice != "div"
+		choice != "Div" && choice != "div" &&
+		choice != "Q" && choice != "q"
 	) {
 		loopAgain();
 	}
